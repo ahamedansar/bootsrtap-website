@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comics - Spider-Man Universe</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <style>
+    /* Hero section */
+    .hero {
+      background: url('comics-banner.jpg') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+    }
+    /* Card images */
+    .card-img-top {
+      height: 350px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="index.html">
+      <img src="sp13.png" alt="AAN Logo" width="100" height="40" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="suits.html">Suits</a></li>
+        <li class="nav-item"><a class="nav-link active" href="comics.html">Comics</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Watch Movies</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">NETFLIX</a></li>
+            <li><a class="dropdown-item" href="#">AMAZON PRIME</a></li>
+            
+            
+          </ul>
+          
+        </li>
+      </ul>
+      <form class="d-flex me-3">
+        <input class="form-control me-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div>
+        <img src="prof.jpg" class="rounded-circle border" width="40" height="40" alt="Profile">
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1 class="display-4 fw-bold">Spider-Man Comics</h1>
+    <p class="lead">Dive into the legendary comic book stories that shaped the Marvel Universe</p>
+  </div>
+</section>
+
+<!-- Comics Grid -->
+<div class="container my-5">
+  <div class="row g-4">
+    
+    <!-- Comic 1 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/1.jpeg" class="card-img-top" alt="Amazing Fantasy #15">
+        <div class="card-body">
+          <h5 class="card-title">Amazing Fantasy #15 (1962)</h5>
+          <p class="card-text">The legendary debut of Spider-Man, where Peter Parker first dons the mask.</p>
+          <a href="#" class="btn btn-danger">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comic 2 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/2.jpeg" class="card-img-top" alt="The Night Gwen Stacy Died">
+        <div class="card-body">
+          <h5 class="card-title">The Night Gwen Stacy Died (1973)</h5>
+          <p class="card-text">A heartbreaking and defining story in Spider-Man’s journey against Green Goblin.</p>
+          <a href="#" class="btn btn-warning">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comic 3 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/3.jpeg" class="card-img-top" alt="Kraven's Last Hunt">
+        <div class="card-body">
+          <h5 class="card-title">Kraven’s Last Hunt (1987)</h5>
+          <p class="card-text">A dark psychological tale where Kraven seeks to finally defeat Spider-Man.</p>
+          <a href="#" class="btn btn-success">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comic 4 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/4.jpeg" class="card-img-top" alt="Spider-Verse">
+        <div class="card-body">
+          <h5 class="card-title">Spider-Verse (2014)</h5>
+          <p class="card-text">A multiverse crossover where every Spider-Man unites against the Inheritors.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comic 5 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/5.jpeg" class="card-img-top" alt="Ultimate Spider-Man">
+        <div class="card-body">
+          <h5 class="card-title">Ultimate Spider-Man (2000)</h5>
+          <p class="card-text">A modern retelling of Peter Parker’s origin, redefined for a new generation.</p>
+          <a href="#" class="btn btn-dark">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comic 6 -->
+    <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/6.jpeg" class="card-img-top" alt="Superior Spider-Man">
+        <div class="card-body">
+          <h5 class="card-title">Superior Spider-Man (2013)</h5>
+          <p class="card-text">Doctor Octopus takes over Peter’s body, trying to prove he can be a better hero.</p>
+          <a href="#" class="btn btn-info">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- comics 7 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/7.jpeg" class="card-img-top" alt="Superior Spider-Man">
+        <div class="card-body">
+          <h5 class="card-title">Superior Spider-Man (2013)</h5>
+          <p class="card-text">Doctor Octopus takes over Peter’s body, trying to prove he can be a better hero.</p>
+          <a href="#" class="btn btn-info">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- comics 8 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="card shadow h-100">
+        <img src="images/8.jpeg" class="card-img-top" alt="Superior Spider-Man">
+        <div class="card-body">
+          <h5 class="card-title">Superior Spider-Man (2013)</h5>
+          <p class="card-text">Doctor Octopus takes over Peter’s body, trying to prove he can be a better hero.</p>
+          <a href="#" class="btn btn-info">Read More</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3 text-danger">About Spider-Man</h5>
+        <p>Spider-Man is the friendly neighborhood hero, symbol of courage and responsibility.</p>
+      </div>
+      <div class="col-md-2">
+        <h5 class="fw-bold mb-3 text-danger">Explore</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="suits.html" class="text-light text-decoration-none">Suits</a></li>
+          <li><a href="comics.html" class="text-light text-decoration-none">Comics</a></li>
+          <li><a href="movies.html" class="text-light text-decoration-none">Movies</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3 text-danger">Marvel Universe</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Avengers</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Iron Man</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Doctor Strange</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Guardians</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="fw-bold mb-3 text-danger">Connect</h5>
+        <p><i class="fa-solid fa-location-dot me-2"></i> Kasaragod city</p>
+        <p><i class="fa-solid fa-envelope me-2"></i> ahamedansar@marvel.com</p>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-secondary text-center py-3 mt-4">
+    <p class="mb-0">&copy; 2025 <strong>Marvel Universe</strong>. Designed with ❤️ by AAN.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
