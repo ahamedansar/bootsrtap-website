@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Responsive Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
 
   <style>
     /* Equal height for carousel images */
     .carousel-item img {
       height: 600px;
-      object-fit: cover; 
+      object-fit: cover;
     }
 
     /* Equal height for card images */
     .card-img-top {
       height: 300px;
-     
+
       object-fit: cover;
     }
 
@@ -25,246 +27,248 @@
     .card {
       height: 100%;
     }
-  
   </style>
 </head>
+
 <body>
-  
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
-  <div class="container-fluid">
-   <a class="navbar-brand fw-bold" href="index.html">
-  <img src="sp13.png" alt="A Logo" width="100" height="40" class="d-inline-block align-text-top">
-</a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <img src="sp13.png" alt="A Logo" width="100" height="40" class="d-inline-block align-text-top">
+      </a>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left Links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="suits.html">Suits</a></li>
-         <li class="nav-item"><a class="nav-link" href="comics.html">Comics</a></li>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Left Links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="suits.html">Suits</a></li>
+          <li class="nav-item"><a class="nav-link" href="comics.html">Comics</a></li>
           <li class="nav-item"><a class="nav-link" href="movies.html">Movies</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Watch Movies</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">NETFLIX</a></li>
-            <li><a class="dropdown-item" href="#">AMAZON PRIME</a></li>
-            
-            
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Watch Movies</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.netflix.com/in/title/60004481">NETFLIX</a></li>
+              <li><a class="dropdown-item" href="https://www.primevideo.com/detail/Spider-Man-No-Way-Home/0K2K4N25VGA0GOABHNZ2AXJPF7">AMAZON PRIME</a></li>
+
+
+            </ul>
+
+          </li>
+        </ul>
+
+        <form class="d-flex me-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+
+        <!-- Profile -->
+        <button type="button" class="btn  ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+
+          <div class="d-flex align-items-center">
+            <img src="prof.jpg" alt="Profile" class="rounded-circle border" width="40" height="40">
+          </div>
+      </div>
+    </div>
+    </button>
+  </nav>
+
+
+  <!-- form -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Update your Profile</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="prof.jpg" alt="Profile" class="rounded-circle border" width="40" height="40">
+          ahamedansar
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="marvel.jpg" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="mann.jpeg" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="card.jpg" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+
+  <!-- Cards -->
+  <div class="container my-5">
+    <div class="row g-4">
+
+
+
+      <!-- Card 1 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow h-100">
+          <img src="images/spidean.jpg" class="card-img-top" alt="Card 1">
+          <div class="card-body">
+            <h5 class="card-title">Spider Man</h5>
+            <p class="card-text">Spider-Man, Marvel hero Peter Parker, gains spider powers, fights villains, and learns responsibility, balancing life as student and superhero.</p>
+            <a href="https://en.wikipedia.org/wiki/Spider-Man" class="btn btn-primary">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow h-100">
+          <img src="images/spsuit.jpeg" class="card-img-top" alt="Card 2">
+          <div class="card-body">
+            <h5 class="card-title">Suits</h5>
+            <p class="card-text">Spider-Man’s suit is red and blue, designed for agility, protection, and stealth, featuring web-shooters, spider emblem, and eye lenses .</p>
+            <a href="https://marvel.fandom.com/wiki/Spider-Man%27s_Suit" class="btn btn-success">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow h-100">
+          <img src="images/spcomics.jpeg" class="card-img-top" alt="Card 3">
+          <div class="card-body">
+            <h5 class="card-title">Comics</h5>
+            <p class="card-text">Spider-Man comics, created by Stan Lee and Steve Ditko, debuting in 1962, showcase Peter Parker’s adventures, struggles, and heroic battle.</p>
+            <a href="https://www.marvel.com/comics/characters/1009610/spider-man_peter_parker" class="btn btn-danger">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card shadow h-100">
+          <img src="images/spmov.jpg" class="card-img-top" alt="Card 4">
+          <div class="card-body">
+            <h5 class="card-title">movies</h5>
+            <p class="card-text">Spider-Man movies feature Peter Parker’s journey and heroism, portrayed by Tobey Maguire, Andrew Garfield, and Tom Holland.</p>
+            <a href="https://en.wikipedia.org/wiki/Spider-Man_in_film" class="btn btn-warning">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- About -->
+        <div class="col-md-4">
+          <h5 class="fw-bold mb-3 text-danger">About Spider-Man</h5>
+          <p>
+            Spider-Man, created by Marvel, is the friendly neighborhood hero known for courage, responsibility,
+            and the never-ending fight to protect the city from evil.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-2">
+          <h5 class="fw-bold mb-3 text-danger">Explore</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
+            <li><a href="suits.html" class="text-decoration-none text-light">Suits</a></li>
+            <li><a href="comics.html" class="text-decoration-none text-light">Comics</a></li>
+            <li><a href="movies.html" class="text-decoration-none text-light">Movies</a></li>
           </ul>
-          
-        </li>
-      </ul>
-
-  <form class="d-flex me-3" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-
-      <!-- Profile -->
-       <button type="button" class="btn  ms-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
-
-
-      <div class="d-flex align-items-center">
-        <img src="prof.jpg" alt="Profile" class="rounded-circle border" width="40" height="40">
-      </div>
-    </div>
-  </div>
-  </button>
-</nav>
-
-
-<!-- form -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Update your Profile</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-         <img src="prof.jpg" alt="Profile" class="rounded-circle border" width="40" height="40">
-         ahamedansar
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- Carousel -->
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-  </div>
-
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="marvel.jpg" class="d-block w-100" alt="Slide 1">
-    </div>
-    <div class="carousel-item">
-      <img src="mann.jpeg" class="d-block w-100" alt="Slide 2">
-    </div>
-    <div class="carousel-item">
-      <img src="card.jpg" class="d-block w-100" alt="Slide 3">
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
-</div>
-
-
-<!-- Cards -->
-<div class="container my-5">
-  <div class="row g-4">
-    
-
-    
-    <!-- Card 1 -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card shadow h-100">
-        <img src="sp2.jpg" class="card-img-top" alt="Card 1">
-        <div class="card-body">
-          <h5 class="card-title">Classic Suit</h5>
-          <p class="card-text">The original red and blue Spider-Man suit reflects his humble beginnings, symbolizing courage, responsibility, and the never-ending fight to protect</p>
-          <a href="#" class="btn btn-primary">Read More</a>
         </div>
-      </div>
-    </div>
-    
-    <!-- Card 2 -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card shadow h-100">
-        <img src="sp6.jpg" class="card-img-top" alt="Card 2">
-        <div class="card-body">
-          <h5 class="card-title">Iron Spider Suit</h5>
-          <p class="card-text">Built by Tony Stark, the Iron Spider suit enhances Spider-Man with advanced technology, armored protection, and mechanical arms designed to handle the most dangerous </p>
-          <a href="#" class="btn btn-success">Read More</a>
+
+        <!-- Universe -->
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-3 text-danger">Marvel Universe</h5>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-decoration-none text-light">Avengers</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Iron Man</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Doctor Strange</a></li>
+            <li><a href="#" class="text-decoration-none text-light">Guardians</a></li>
+          </ul>
         </div>
-      </div>
-    </div>
-    
-    <!-- Card 3 -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card shadow h-100">
-        <img src="sp4.jpg" class="card-img-top" alt="Card 3">
-        <div class="card-body">
-          <h5 class="card-title">Stealth Suit</h5>
-          <p class="card-text">Crafted for covert missions, the Stealth Suit provides Spider-Man with agility, tactical advantages, and advanced stealth features to operate undetected during high-risk.</p>
-          <a href="#" class="btn btn-danger">Read More</a>
+
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5 class="fw-bold mb-3 text-danger">Connect</h5>
+          <p><i class="fa-solid fa-location-dot me-2"></i> Kasaragod city</p>
+          <p><i class="fa-solid fa-envelope me-2"></i> ahamedansar@marvel.com</p>
+
+          <!-- Social icons -->
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-light fs-5"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="text-light fs-5"><i class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-      </div>
-    </div>
-    
-    <!-- Card 4 -->
-    <div class="col-12 col-sm-6 col-lg-3">
-      <div class="card shadow h-100">
-        <img src="sp5.jpg" class="card-img-top" alt="Card 4">
-        <div class="card-body">
-          <h5 class="card-title">Upgraded Suit</h5>
-          <p class="card-text">The upgraded red and black suit combines modern design with enhanced technology, giving Spider-Man improved strength, flexibility, and tools to face evolving threats.</p>
-          <a href="#" class="btn btn-warning">Read More</a>
-        </div>
+
       </div>
     </div>
 
-  </div>
-</div>
-
-
-
-<!-- Footer -->
-<footer class="bg-dark text-light pt-5">
-  <div class="container">
-    <div class="row gy-4">
-      
-      <!-- About -->
-      <div class="col-md-4">
-        <h5 class="fw-bold mb-3 text-danger">About Spider-Man</h5>
-        <p>
-          Spider-Man, created by Marvel, is the friendly neighborhood hero known for courage, responsibility, 
-          and the never-ending fight to protect the city from evil.
-        </p>
-      </div>
-
-      <!-- Quick Links -->
-      <div class="col-md-2">
-        <h5 class="fw-bold mb-3 text-danger">Explore</h5>
-        <ul class="list-unstyled">
-          <li><a href="index.html" class="text-decoration-none text-light">Home</a></li>
-          <li><a href="#" class="text-decoration-none text-light">Suits</a></li>
-          <li><a href="#" class="text-decoration-none text-light">Comics</a></li>
-          <li><a href="#" class="text-decoration-none text-light">Movies</a></li>
-        </ul>
-      </div>
-
-      <!-- Universe -->
-      <div class="col-md-3">
-        <h5 class="fw-bold mb-3 text-danger">Marvel Universe</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-decoration-none text-light">Avengers</a></li>
-          <li><a href="#" class="text-decoration-none text-light">Iron Man</a></li>
-          <li><a href="#" class="text-decoration-none text-light">Doctor Strange</a></li>
-          <li><a href="#" class="text-decoration-none text-light">Guardians</a></li>
-        </ul>
-      </div>
-
-      <!-- Contact -->
-      <div class="col-md-3">
-        <h5 class="fw-bold mb-3 text-danger">Connect</h5>
-        <p><i class="fa-solid fa-location-dot me-2"></i> Kasaragod city</p>
-        <p><i class="fa-solid fa-envelope me-2"></i> ahamedansar@marvel.com</p>
-        
-        <!-- Social icons -->
-        <div class="d-flex gap-3 mt-3">
-          <a href="#" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="text-light fs-5"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a>
-          <a href="#" class="text-light fs-5"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
-
+    <!-- Bottom Bar -->
+    <div class="bg-secondary text-center py-3 mt-4">
+      <p class="mb-0">
+        &copy; 2025 <strong>Marvel Universe</strong>. Designed by AAN GROUP.
+      </p>
     </div>
-  </div>
-
-  <!-- Bottom Bar -->
-  <div class="bg-secondary text-center py-3 mt-4">
-    <p class="mb-0">
-      &copy; 2025 <strong>Marvel Universe</strong>. Designed with ❤️ by AAN.
-    </p>
-  </div>
-</footer>
+  </footer>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
 
-<script>
-  const myCarousel = document.querySelector('#myCarousel');
-  const carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 3000, // 3 seconds
-    ride: 'carousel'
-  });
-</script>
+  <script>
+    const myCarousel = document.querySelector('#myCarousel');
+    const carousel = new bootstrap.Carousel(myCarousel, {
+      interval: 3000, // 3 seconds
+      ride: 'carousel'
+    });
+  </script>
 
 
 </body>
+
 </html>
